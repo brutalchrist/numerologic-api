@@ -1,0 +1,20 @@
+{
+  "name": "numerologic-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "PORT=80 node ./bin/www",
+    "dev": "DEBUG=numerologic-api:* nodemon node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "dayjs": "^1.8.10",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "numerologic": "github:brutalchrist/numerologic"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
