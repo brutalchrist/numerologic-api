@@ -4,9 +4,8 @@ const dayjs = require('dayjs');
 
 const router = express.Router();
 
-/* GET users listing. */
 router.post('/', function(req, res, next) {
-  const date = dayjs(`${req.body.year}-${req.body.month}-${req.body.day}`)
+  const date = dayjs(req.body.text)
     .format('DD.MM.YYYY');
   const bioRhythms = numerology(date).bioRhythms();
 
