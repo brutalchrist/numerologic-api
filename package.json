@@ -10,9 +10,11 @@
     "cookie-parser": "~1.4.3",
     "dayjs": "^1.8.10",
     "debug": "~2.6.9",
+    "dotenv": "^7.0.0",
     "express": "~4.16.0",
     "morgan": "~1.9.0",
-    "numerologic": "github:brutalchrist/numerologic"
+    "numerologic": "github:brutalchrist/numerologic",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"

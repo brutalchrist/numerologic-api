@@ -5,6 +5,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const biorhythmsRouter = require('./routes/biorhythms');
+const slackAuthRouter = require('./routes/slack/auth');
 const slackBiorhythmsRouter = require('./routes/slack/biorhythms');
 
 const app = express();
@@ -17,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/biorhythms', biorhythmsRouter);
+app.use('/slack/auth', slackAuthRouter);
 app.use('/slack/biorhythms', slackBiorhythmsRouter);
 
 module.exports = app;
